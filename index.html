@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-share</title>
+    <!--ぐるぐるふぉんと (M+)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--jQuery (MIT LICENSE)-->
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <!--JQuery.QRcode (MIT LICENSE)-->
+    <script src="jquery.qrcode.min.js" type="text/javascript"></script>
+    <div class="header0">
+        <div class="header1">
+            <h1>QR-share</h1>
+            <p>QRコードで文字列を簡単共有</p>
+        </div>
+    </div>
+    <!--まっくろくろすけ-->
+    <div class="Black"></div>
+    <!--生成-->
+    <div class="QRcreate">
+        <p class="closeX"><a href="javascript:windowClose();">×</a></p>
+        <div id="qrcode"></div>
+        <input type="button" value="PNG画像でダウンロード" id="qrdown">
+    </div>
+    <!--読み取り-->
+    <div class="QRload">
+        <p class="closeX"><a href="javascript:windowClose();">×</a></p>
+        <label for="valueget" id="copied">QRコードの文字列</label>
+        <input type="text" name="valueget" id="valueget" readonly="readonly">
+        <input type="button" value="クリップボードにコピー" id="valuecopy">
+    </div>
+    <div class="main">
+        <h2>Let's share!</h2>
+        <label for="sharevalue">共有したい文字列</label>
+        <input type="text" name="sharevalue" id="valueB" maxlength="100" placeholder="100文字まで">
+        <input type="button" value="QRコードを生成" id="createB">
+        <hr>
+        <h2>How to use?（共有する側）</h2>
+        <p>1.共有したい文字列をテキストボックスに入力します。</p>
+        <p>2.QRコードを生成します。</p>
+        <p>3.生成されたQRコードを、共有したい人に見せてください。</p>
+        <h2>How to use?（共有される側）</h2>
+        <p>1.カメラアプリでQRコードを読み取ります。</p>
+        <p>2.「クリップボードにコピー」を押します。</p>
+        <p>3.アプリ等にペーストしてご使用ください。</p>
+        <h2>Share this app</h2>
+        <div class="sharebutton">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="QR-shareを使えばゲームのプレーヤーIDなどの文字列を簡単に共有できます！" data-via="neyatetsu" data-related="" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://twitter.com/NeyaTetsu">開発者Twitter</a></li>
+            <li><a href="https://github.com/NeyaTetsu/QR-share/">ソースコード</a></li>
+        </ul>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+    <!--フェイスブック-->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v14.0" nonce="nCWjj8Xj"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+.header0{
+    box-shadow: 0 0 6px #777;
+    margin-bottom: 24px;
+}
+.header1{
+    max-width: 768px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 12px 0px;
+}
+
+h1{
+    display: inline-block;
+    margin: 0;
+    font-size: 48px;
+    margin: 0 14px;
+}
+.header0 p{
+    display: inline-block;
+    font-size: 18px;
+    margin: 0 18px;
+}
+
+.Black{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: -24px;
+    position: fixed;
+}
+
+.QRcreate{
+    max-width: 768px;
+    width: 90%;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 6px #000;
+    border-radius: 24px;
+    padding: 36px;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.closeX{
+    text-align: end;
+    margin: -36px -12px 12px 12px;
+    font-size: 48px;
+}
+.closeX a{
+    text-decoration: none;
+    color: #000;
+}
+canvas{
+    display: block;
+    margin: 0 auto 32px auto;
+}
+
+.QRload{
+    max-width: 768px;
+    width: 90%;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 0 6px #000;
+    border-radius: 24px;
+    padding: 36px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main{
+    max-width: 768px;
+    width: 90%;
+    margin: 12px auto;
+}
+
+h2{
+    font-size: 36px;
+    text-align: start;
+    margin: 24px 0;
+    padding: 0 18px;
+    border-bottom: solid 2px #000;
+}
+
+hr{
+    margin: 64px 0;
+}
+
+p{
+    font-size: 20px;
+    margin: 15px;
+}
+
+li{
+    font-size: 20px;
+}
+
+a{
+    color: #1d9bf0;
+}
+
+label{
+    font-size: 24px;
+    margin: 0 3%;
+    padding: 12px 16px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+input{
+    display: block;
+    margin: 0 auto 12px auto;
+    font-size: 24px;
+    transition: .3s;
+}
+input[type="text"]{
+    width: calc(100% - 32px);
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 1px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    outline: none;
+    padding: 16px;
+}
+input[type="text"]:focus{
+    border-color: #aaa;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+input[type="button"]{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 18px;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    box-shadow: 0 0 6px #000;
+}
